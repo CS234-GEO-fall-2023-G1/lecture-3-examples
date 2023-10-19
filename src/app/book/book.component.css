@@ -1,0 +1,16 @@
+
+.in-stock{
+    background-color: green;
+}
+
+.out-of-stock{
+    background-color: red;
+}
+
+.thin-book{
+    color: yellow;
+}
+
+.thick-book{
+    color: blue;
+}

@@ -1,0 +1,29 @@
+<p>book works!</p>
+
+
+<!-- <div>{{book.title}}</div> -->
+
+<!-- <div *ngFor="let book of bookList">
+    <ng-container *ngIf="book.pages > 100">{{book.title}}</ng-container>
+</div> -->
+
+
+<!-- <div *ngFor="let book of bookList">
+    <div [ngClass]="book.isInStock ? 'in-stock' : 'out-of-stock'">{{book.title}}</div>
+</div> -->
+
+<!-- <div class="" [ngClass]="[book.isInStock ? 'in-stock' : 'out-of-stock', book.pages < 100 ? 'thin-book' : 'thick-book']">{{book.title}}</div> -->
+
+
+<!-- <div [ngStyle]="{'color': book.isInStock ? 'green' : 'red', 
+                 'background-color': book.isInStock ? 'yellow' : 'blue'}">
+                 {{book.title}}
+</div> -->
+
+
+<div [ngSwitch]="book.title">
+    <div *ngSwitchCase="'Title2'">Title 2</div>
+    <div *ngSwitchCase="'Title5'">Title 5</div>
+    <div *ngSwitchCase="'Title'">Title</div>
+</div>
+

@@ -1,0 +1,10 @@
+
+
+<div style="display: flex; gap: 20px;">
+    <div>{{childBook.title}}</div>
+    <div>{{childBook.author}}</div>
+</div>
+
+<input type="text" #newTitle>
+
+<button (click)="onButton(newTitle.value)">Button</button>

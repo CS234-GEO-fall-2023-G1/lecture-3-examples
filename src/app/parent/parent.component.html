@@ -1,0 +1,11 @@
+<p>parent works!</p>
+
+
+<!-- <app-child [childBookList]="book"></app-child> -->
+
+<div *ngFor="let book of bookList">
+    <app-child (onClick)="getTitle($event)" [childBook]="book"></app-child>
+</div>
+
+
+<div style="background-color: aqua;">{{title}}</div>
